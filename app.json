@@ -1,0 +1,53 @@
+{
+	"expo": {
+		"name": "test-app",
+		"slug": "test-app",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "light",
+		"splash": {
+			"image": "./assets/splash.png",
+			"backgroundColor": "#111"
+		},
+		"ios": {
+			"supportsTablet": true,
+			"bundleIndetifier": "com.legion.testapp",
+			"infoPlist": {
+				"UIBackgroundModes": ["fetch", "remote-notification"],
+				"CFBundleURLTypes": [
+					{
+						"CFBundleURLSchemes": [
+							"com.googleusercontent.apps.557401731562-lms0h4laks83v74i8ei6hveuqfali4ca"
+						]
+					}
+				]
+			},
+			"bundleIdentifier": "com.legion.testapp"
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"package": "com.legion.testapp"
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		},
+		"plugins": [
+			[
+				"@react-native-google-signin/google-signin",
+				{
+					"iosUrlScheme": "com.googleusercontent.apps._some_id_here_"
+				}
+			]
+		],
+		"extra": {
+			"eas": {
+				"projectId": "e9677a9f-384d-45d7-9b6e-30d7d47fb373"
+			}
+		},
+		"owner": "legion1488"
+	}
+}
